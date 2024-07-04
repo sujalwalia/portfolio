@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<style>
+    *{
+    margin: 0;
+}
+.navbar{
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+.list{
+    text-decoration: none;
+    padding: 20px;
+    font-size: larger;
+    color: white;
+
+}
+h1,h4{
+    text-align: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about{
+    height: 100px;
+    margin-top: 5px;
+    background-color: rgb(74, 73, 73);
+}
+.project{
+height: auto;
+
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.child{
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+height: 250px;
+width: 250px;
+
+margin: 20px;
+background-image: url("img1.jpg");
+background-position: center;
+background-size: cover;
+
+}
+.contact{
+    height: 400px;
+    margin top:50px ;: 200px;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    background-color: rgb(113, 104, 104);
+    color: white;
+}
+.btn{
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+
+}
+.foot{
+    height: 200px;
+    background-color: rgb(5, 5, 5);
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+
+
+
+
+
+@media (max-width:353px) {
+    .list{
+        padding: 3px;
+    }
+
+}
+@media (max-width:500px) {
+    .child{
+        height: 400px;
+        width: 400px;
+    }
+    .contact{
+        font-size: larger;
+    }
+}
+</style>
+<body>
+    <!-- for navbar -->
+    <div class="navbar">
+        <h1>My Portfolio</h1>
+        <br>
+        <a class="list" href="#about">About Me</a>
+        <a class="list" href="#about">Portfolio</a>
+        <a class="list" href="#about">Contact</a>
+    </div>
+    <br>
+    <!-- for aboutme -->
+    <div class="about">
+        <h1>About Me</h1>
+        <h4> I'm a developer</h4>
+    </div>
+    <!-- for featured -->
+     <br>
+     <h1>Featured Project</h1>
+    <div class="project">
+        <div class="child">Project 1</div>
+        <div class="child">Project 2</div>
+        <div class="child">Project 3</div>
+        <div class="child">Project 4</div>
+        <div class="child">Project 5</div>
+    </div>
+    <br>
+    <!-- Contact us page -->
+     <h1>Contact Us</h1>
+     <div class="contact">
+        <br>
+        <label for="name">Name:-</label>
+        <br>
+        <input type="name" id="name">
+    <br><br>
+        <label for="email">Email:-</label>
+        <br>
+        <input type="email" id="email">
+        <br><br>
+        <label for="contact">contact:-</label>
+        <br>
+        <input type="contact" id="contact">
+        <br>
+        <button class="btn">submit</button>
+
+     </div>
+     <footer>
+        <div class="foot">
+        </div>
+     </footer>
+
+</body>
+</html>
